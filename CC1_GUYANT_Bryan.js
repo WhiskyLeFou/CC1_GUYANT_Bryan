@@ -52,6 +52,7 @@ function launchGame(_evt) {
     $output.innerText += " essai !"; 
   }
 
+  $guessBtn.disabled = false;
   $maxUsr.disabled = true;          // Bloque la zone pour entrer la limite du nombre à chercher
   $startBtn.disabled = true;        // Désactive le bouton pour lancer une partie
   $guessBtn.disabled = false;       // Active le bouton pour faire des tentatives
@@ -66,6 +67,7 @@ function launchGame(_evt) {
     }
   }
 }
+$guessBtn.disabled = true;
 $startBtn.addEventListener("click", launchGame);
 
 /*-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------*/
