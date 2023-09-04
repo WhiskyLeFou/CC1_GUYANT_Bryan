@@ -31,7 +31,7 @@ function check_num() {        // Fonction effectuant la vérification du nombre 
     }
   
     if (maxGuesses === 0) {             // Le nombre secret n'a pas été trouvé
-      $output.innerText += "\nPerdu ! Le nombre secret était " + secretNumber;
+      $output.innerText += "\nPerdu ! Le nombre secret était " + secretNumber + "...";
       $startBtn.disabled = false;
       $guessBtn.disabled = true;
     }
