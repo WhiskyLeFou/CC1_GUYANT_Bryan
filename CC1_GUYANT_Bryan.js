@@ -12,7 +12,7 @@ let nbGuesses = 0;
 let maxGuesses = 0;
 
 function check_num() {        // Fonction effectuant la vérification du nombre entré par l'utilisateur
-  if (isNaN(parseInt($numUsr.value)) || $numUsr.value < 0 || $numUsr.value > parseInt($maxUsr.value)) {     // Affiche un message d'erreur si l'input de l'utilisateur n'est pas un nombre valide
+  if (isNaN(parseInt($numUsr.value)) || $numUsr.value < 0 || $numUsr.value > parseInt($maxUsr.value) || $numUsr.value % 1 !== 0) {     // Affiche un message d'erreur si l'input de l'utilisateur n'est pas un nombre valide
     $output.innerText += "\nValeur entrée invalide !";
 
   } else {
